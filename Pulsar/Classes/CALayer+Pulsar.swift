@@ -202,7 +202,7 @@ public class Builder {
 	}
 }
 
-class Delegate {
+class Delegate: NSObject, CAAnimationDelegate {
 	
 	let pulseLayer: CAShapeLayer
 	let startBlock: PulsarStartClosure? = nil
