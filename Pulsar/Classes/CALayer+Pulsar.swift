@@ -222,6 +222,7 @@ class Delegate: NSObject, CAAnimationDelegate {
         guard var pulseLayers = self.pulseLayer.superlayer?.pulsarLayers else {
             return
         }
+
         if let index = pulseLayers.indexOf(self.pulseLayer) {
             pulseLayers.removeAtIndex(index)
             self.pulseLayer.removeFromSuperlayer()
